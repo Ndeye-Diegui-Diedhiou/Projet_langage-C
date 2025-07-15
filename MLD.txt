@@ -1,0 +1,46 @@
+Etudiant
+
+| Attribut      | Type       | Contraintes                       |
+| ------------- | ---------- | --------------------------------- |
+| idEtudiant    | entier     | Clé primaire                      |
+| nom           | texte      |                                   |
+| prenom        | texte      |                                   |
+| dateNaissance | date/texte |                                   |
+| codeClasse    | texte      | Clé étrangère → CLASSE.codeClasse |
+
+
+CLASSE
+
+| Attribut   | Type  | Contraintes  |
+| ---------- | ----- | ------------ |
+| codeClasse | texte | Clé primaire |
+| nomClasse  | texte |              |
+
+
+Matiere
+
+| Attribut    | Type  | Contraintes  |
+| ----------- | ----- | ------------ |
+| codeMatiere | texte | Clé primaire |
+| nomMatiere  | texte |              |
+| coefficient | réel  |              |
+
+
+Classe_Matiere
+
+| Attribut         | Type  | Contraintes                         |
+| ---------------- | ----- | ----------------------------------- |
+| codeClasse       | texte | Clé étrangère → CLASSE.codeClasse   |
+| codeMatiere      | texte | Clé étrangère → MATIERE.codeMatiere |
+| **PK composite** |       | (codeClasse, codeMatiere)           |
+
+
+Note 
+
+| Attribut         | Type   | Contraintes                         |
+| ---------------- | ------ | ----------------------------------- |
+| idEtudiant       | entier | Clé étrangère → ETUDIANT.idEtudiant |
+| codeMatiere      | texte  | Clé étrangère → MATIERE.codeMatiere |
+| noteCC           | réel   | (note de contrôle continu)          |
+| noteDS           | réel   | (note de devoir surveillé)          |
+| **PK composite** |        | (idEtudiant, codeMatiere)           |
