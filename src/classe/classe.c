@@ -2,9 +2,10 @@
 #include<stdlib.h>
 #include<string.h>
 #include <wchar.h>
-#include "classes.h"
+#include "classe.h"
+#include "../utils/file_utils.h"
 
-#define FICHIER_CLASSES "Classes.csv"
+#define FICHIER_CLASSES "donnees/classes.csv"
 
 void ajouterClasse() {
     Classe classe;
