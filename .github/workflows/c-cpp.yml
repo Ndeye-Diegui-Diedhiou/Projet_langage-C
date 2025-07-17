@@ -13,8 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: configure
-      run: ./configure
     - name: compilation
       run: gcc -o ./pgi-c main.c src/*/*.c
    
