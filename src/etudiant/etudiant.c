@@ -2,9 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 #include <wchar.h>
-#include "etudiants.h"
+#include "etudiant.h"
+#include "../utils/file_utils.h"
 
-#define FICHIER_ETUDIANTS "Etudiants.csv"
+#define FICHIER_ETUDIANTS "donnees/etudiants.csv"
 
 
 void ajouterEtudiant() {

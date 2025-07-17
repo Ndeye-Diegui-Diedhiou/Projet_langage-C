@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "notes.h"
-#include "etudiants.h"
-#include "matieres.h"
+#include "note.h"
+#include "../etudiant/etudiant.h"
+#include "../matiere/matiere.h"
+#include "../utils/file_utils.h"
 
-#define FICHIER_NOTES "Notes.csv"
-#define FICHIER_ETUDIANTS "Etudiants.csv"
-#define FICHIER_MATIERES "Matieres.csv"
+#define FICHIER_NOTES "donnees/notes.csv"
+#define FICHIER_ETUDIANTS "donnees/etudiants.csv"
+#define FICHIER_MATIERES "donnees/matieres.csv"
 
 void ajouterNoteEtudiantMatiere() {
     Note note;

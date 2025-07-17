@@ -1,9 +1,10 @@
 #include <stdio.h>
-#include "etudiants.h"
-#include "matieres.h"
-#include "classes.h"
-#include "notes.h"
-#include "MatieresClasses.h"
+#include "../etudiant/etudiant.h"
+#include "../matiere/matiere.h"
+#include "../classe/classe.h"
+#include "../note/note.h"
+#include "../matiere/matiere_classe.h"
+#include "../utils/file_utils.h"
 #include <wchar.h>
 
 void menuPrincipal() {

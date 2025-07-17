@@ -1,8 +1,9 @@
 #include <stdio.h>
-#include "MatieresClasses.h"
+#include "matiere_classe.h"
+#include "../utils/file_utils.h"
 #include <wchar.h>
 
-#define FICHIER_MATIERES_CLASSES "MatieresClasses.csv"
+#define FICHIER_MATIERES_CLASSES "donnees/matieres_classes.csv"
 
 void associerMatiereClasse() {
     int code;

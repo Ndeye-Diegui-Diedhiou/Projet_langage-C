@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "matieres.h"
+#include "matiere.h"
+#include "../utils/file_utils.h"
 #include <wchar.h>
 
-#define FICHIER_MATIERES "Matieres.csv"
+#define FICHIER_MATIERES "donnees/matieres.csv"
 void ajouterMatiere() {
     Matiere matiere;
 
